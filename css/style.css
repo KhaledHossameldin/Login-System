@@ -1,0 +1,26 @@
+:root {
+    --beige: #F4E0B9;
+    --faded-beige: #F4E0B9B3;
+}
+
+.btn {
+    background-color: var(--beige);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--beige);
+    filter: brightness(95%);
+    -webkit-filter: brightness(95%);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--beige);
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem var(--faded-beige);
+    border-color: var(--beige);
+}

@@ -3,6 +3,11 @@
     --faded-beige: #F4E0B9B3;
 }
 
+::selection {
+    background-color: var(--beige);
+    color: black;
+}
+
 .btn:not(.btn-danger) {
     background-color: var(--beige);
     border: none;

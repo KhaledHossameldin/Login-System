@@ -20,6 +20,7 @@ document.querySelector('button.btn').addEventListener('click', function () {
             if (accounts[i].email == emailInput.value && accounts[i].password == passwordInput.value) {
                 emailInput.value = '';
                 passwordInput.value = '';
+                localStorage.setItem('currentAccount', JSON.stringify(accounts[i]));
                 window.open('./html/welcome.html', '_self');
                 return;
             }

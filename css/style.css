@@ -3,18 +3,22 @@
     --faded-beige: #F4E0B9B3;
 }
 
-.btn {
+.btn:not(.btn-danger) {
     background-color: var(--beige);
     border: none;
 }
 
-.btn:hover {
+.btn:not(.btn-danger):hover {
     background-color: var(--beige);
     filter: brightness(95%);
     -webkit-filter: brightness(95%);
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+.btn-check:checked+.btn:not(.btn-danger),
+.btn:not(.btn-danger).active,
+.btn:not(.btn-danger).show,
+.btn:not(.btn-danger):first-child:active,
+:not(.btn-check)+.btn:not(.btn-danger):active {
     background-color: var(--beige);
     filter: brightness(90%);
     -webkit-filter: brightness(90%);

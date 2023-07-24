@@ -12,15 +12,16 @@
 
 <body>
 
-    <header class="vh-100 d-flex align-items-center">
+    <header class="min-vh-100 py-5 d-flex align-items-center">
         <div class="container">
-            <div class="row g-5 flex-column-reverse flex-lg-row">
+            <div class="row g-5 flex-column-reverse flex-lg-row align-items-start align-items-lg-center">
                 <div class="col-lg-6">
-                    <div class="d-flex flex-column gap-2 justify-content-center h-100">
+                    <div class="d-flex flex-column gap-2">
                         <h1>Smart Login System</h1>
                         <input type="email" id="email" class="form-control" placeholder="Enter your email" />
+                        <p id="email-error" class="fw-bold text-danger mb-0 d-none">Email error</p>
                         <input type="password" id="password" class="form-control" placeholder="Enter your password" />
-                        <p class="fw-bold text-danger mb-0 mt-3 d-none">Error</p>
+                        <p id="password-error" class="fw-bold text-danger mb-0 d-none">Password error</p>
                         <button class="btn mt-3">Login</button>
                         <p>
                             Don’t have an account?

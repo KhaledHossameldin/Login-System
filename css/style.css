@@ -24,3 +24,7 @@
     box-shadow: 0 0 0 .25rem var(--faded-beige);
     border-color: var(--beige);
 }
+
+input.has-error {
+    border: 3px solid red;
+}
